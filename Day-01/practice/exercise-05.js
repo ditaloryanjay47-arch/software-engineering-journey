@@ -1,0 +1,21 @@
+const firstName = "Ryan Jay";
+let age = 29;
+let city = "Quezon City";
+const dreamJob = "Web Developer";
+const favoriteColor = "Blue";
+const hobby = "Mobile Legends";
+let yearsBpo = 3;
+let yearsTeaching = 2;
+let studyHours = 3;
+let learningGoal = "Build software related to customer service and education";
+
+console.log(firstName);
+console.log(age);
+console.log(city);
+console.log(dreamJob);
+console.log(favoriteColor);
+console.log(hobby);
+console.log(yearsBpo);
+console.log(yearsTeaching);
+console.log(studyHours);
+console.log(learningGoal);
