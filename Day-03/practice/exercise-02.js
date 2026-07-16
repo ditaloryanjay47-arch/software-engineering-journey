@@ -5,5 +5,5 @@ if (score >= 90) {
 } else if (score >= 75) {
     console.log("Passed");
 } else {
-    console.log("Failed")
+    console.log("Failed");
 }
