@@ -9,7 +9,7 @@ if (hasLaptop && hasInternet) {
     console.log("Not Ready");
 }
 
-if (finishedHTML !== true) {
+if (finishedHTML) {
     console.log("Ready for CSS");
 } else {
     console.log("Continue HTML Practice");

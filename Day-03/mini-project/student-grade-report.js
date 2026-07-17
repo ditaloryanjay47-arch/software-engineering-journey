@@ -17,3 +17,16 @@ if (studentAttendance >= 90) {
 } else {
     console.log("Needs Improvement");
 }
+
+
+console.log(`
+Student: ${studentName}
+Score: ${studentScore}
+Attendance: ${studentAttendance}
+
+Grade:
+${studentScore}
+
+Attendance:
+${studentAttendance}
+`);
