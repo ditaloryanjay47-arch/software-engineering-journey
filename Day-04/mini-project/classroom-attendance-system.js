@@ -1,8 +1,11 @@
-for(let student = 1; student <= 15; student++) {
-    if(student %5) {
-        console.log(`Student ${student}: Present`);
+const totalStudents = 15;
+
+for (let studentNumber = 1; studentNumber <= totalStudents; studentNumber++) {
+    if (studentNumber % 5 === 0) {
+        console.log(`Student ${studentNumber}: Absent`);
     } else {
-        console.log(`Student ${student}: Absent`)
+        console.log(`Student ${studentNumber}: Present`);
     }
 }
-console.log("Attendance Completed")
+
+console.log("Attendance Completed");

@@ -26,4 +26,4 @@ This repository documents my journey from a Customer Service Representative and 
 - [x] Day 1
 - [x] Day 2
 - [x] Day 3
-- [ ] Day 4
+- [x] Day 4

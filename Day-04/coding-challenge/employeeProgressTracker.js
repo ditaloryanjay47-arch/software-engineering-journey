@@ -1,23 +1,43 @@
 const totalEmployees = 20;
 
-for(let totalEmployees = 1; totalEmployees <= 20; totalEmployees++) {
-    console.log(`Employee ${totalEmployees} completed today's training.`)
+let present = 0;
+let absent = 0;
+
+for (
+    let employeeNumber = 1;
+    employeeNumber <= totalEmployees;
+    employeeNumber++
+) {
+    console.log(
+        `Employee ${employeeNumber} completed today's training.`
+    );
 }
 
-for(let totalEmployees = 1; totalEmployees <= 20; totalEmployees++) {
-    if(totalEmployees % 5 === 0) {
-        console.log(`Employee ${totalEmployees} Absent`);
+console.log("\nAttendance:");
+
+for (
+    let employeeNumber = 1;
+    employeeNumber <= totalEmployees;
+    employeeNumber++
+) {
+    if (employeeNumber % 5 === 0) {
+        absent++;
+        console.log(`Employee ${employeeNumber} - Absent`);
     } else {
-        console.log(`Employee ${totalEmployees} Present`);
+        present++;
+        console.log(`Employee ${employeeNumber} - Present`);
     }
 }
 
-let absent = 4
-let present = 16
+const attendanceRate = (present / totalEmployees) * 100;
 
-console.log(`Present: ${totalEmployees - absent}`)
-console.log(`Absent: ${totalEmployees - present}`)
+let trainingStatus;
 
+if (attendanceRate >= 80) {
+    trainingStatus = "Successful";
+} else {
+    trainingStatus = "Needs Improvement";
+}
 
 console.log(`
 ========================================
@@ -25,13 +45,13 @@ console.log(`
 ========================================
 
 Total Employees: ${totalEmployees}
-Present: ${totalEmployees - present}
-Absent: ${totalEmployees - absent}
+Present: ${present}
+Absent: ${absent}
 
-Attendance Rate: ${present / totalEmployees * 100}%
+Attendance Rate: ${attendanceRate}%
 
 Training Status:
-Successful
+${trainingStatus}
 
 ========================================
-`)
+`);
